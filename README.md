@@ -41,28 +41,6 @@ The macro, named `Split_PO_INV_WithSlash`, performs the following:
 All logic was tailored to our team's SoA structure and reconciliation workflow.
 
 ---
-🔒 Note on Confidentiality  
-Due to financial data sensitivity and internal business rules:
-
-- The actual live Excel data is **not shared**  
-- This repository is a **portfolio case study** to showcase real-world automation logic
-
----
-
-🛠 Skills Used  
-- ✅ Excel VBA (Advanced Macros)  
-- ✅ String Parsing, Validation Logic, Conditional Formatting  
-- ✅ Dictionary Objects & Duplicate Detection  
-- ✅ ERP Awareness (Oracle Fusion, AP workflows)
-
----
-
-👤 Author  
-**Badriah Jaber**  
-Finance Data Automation | Excel VBA Specialist | Process Optimizer  
-🔗 [LinkedIn](https://www.linkedin.com/in/badriah-jaber)
-
-💬 *Let’s connect if you’re tackling similar reconciliation challenges!*
 
 🔧 Full VBA Macro Code – `Split_PO_INV_WithSlash`
 #
@@ -181,3 +159,30 @@ Sub Split_PO_INV_WithSlash()
     Selection.AutoFilter
     Range("K6").Select
 End Sub
+```
+
+---
+
+🔒 Note on Confidentiality  
+Due to financial data sensitivity and internal business rules:
+
+- The actual live Excel data is **not shared**  
+- This repository is a **portfolio case study** to showcase real-world automation logic
+
+---
+
+🛠 Skills Used  
+- ✅ Excel VBA (Advanced Macros)  
+- ✅ String Parsing, Validation Logic, Conditional Formatting  
+- ✅ Dictionary Objects & Duplicate Detection  
+- ✅ ERP Awareness (Oracle Fusion, AP workflows)
+
+---
+
+👤 Author  
+**Badriah Jaber**  
+Finance Data Automation | Excel VBA Specialist | Process Optimizer  
+🔗 [LinkedIn](https://www.linkedin.com/in/badriah-jaber)
+
+💬 *Let’s connect if you’re tackling similar reconciliation challenges!*
+
