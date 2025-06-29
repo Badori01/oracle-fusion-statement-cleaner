@@ -1,4 +1,72 @@
+# 🧾 Oracle Fusion Statement Reconciliation Assistant – Excel VBA Macro
 
+ 📌 Project Summary  
+This Excel VBA macro automates the cleanup and **preparation of Supplier Statement of Account (SoA) exports** from Oracle Fusion (Feogen), enabling **faster and more accurate reconciliation**.  
+The tool solved a critical operational bottleneck for our finance team, reducing hours of manual work each month and minimizing the risk of human error.
+
+---
+
+ ✅ Key Achievements  
+- Reduced SoA processing time from hours to seconds  
+- Improved data accuracy and reduced manual validation  
+- Standardized input format for reconciliation-ready reports  
+- Enhanced visibility into duplicate or suspicious invoice entries  
+- Enabled faster vendor account **reconciliation**  
+
+---
+
+🧠 Problem It Solved  
+Vendor **reconciliation** was one of our most time-consuming monthly tasks.  
+The raw monthly Statement of Account (SoA) exports from Oracle Fusion came in inconsistent and unstructured formats:
+
+- PO and Invoice numbers were merged (e.g. `912345/INV`)
+- Values were partially numeric, inconsistent, or incomplete  
+- Many rows required cleanup before reconciliation could even begin  
+- Rows with zero value or quantity cluttered the file  
+- Reversal matching (positive/negative pairs) was fully manual  
+- Formatting inconsistencies slowed down review
+
+---
+
+ 🚀 The VBA Macro Solution  
+The macro, named `Split_PO_INV_WithSlash`, performs the following:
+
+- Splits merged PO/INV fields into structured columns  
+- Flags inconsistent or suspicious entries  
+- Highlights duplicate invoice numbers via conditional formatting  
+- Validates reversals based on value sign  
+- Removes rows with zero quantity and amount  
+- Auto-formats and filters the output for clean **reconciliation-ready** review  
+
+All logic was tailored to our team's SoA structure and reconciliation workflow.
+
+---
+🔒 Note on Confidentiality  
+Due to financial data sensitivity and internal business rules:
+
+- The actual live Excel data is **not shared**  
+- This repository is a **portfolio case study** to showcase real-world automation logic
+
+---
+
+🛠 Skills Used  
+- ✅ Excel VBA (Advanced Macros)  
+- ✅ String Parsing, Validation Logic, Conditional Formatting  
+- ✅ Dictionary Objects & Duplicate Detection  
+- ✅ ERP Awareness (Oracle Fusion, AP workflows)
+
+---
+
+👤 Author  
+**Badriah Jaber**  
+Finance Data Automation | Excel VBA Specialist | Process Optimizer  
+🔗 [LinkedIn](https://www.linkedin.com/in/badriah-jaber)
+
+💬 *Let’s connect if you’re tackling similar reconciliation challenges!*
+
+🔧 Full VBA Macro Code – `Split_PO_INV_WithSlash`
+#
+```vba
 Sub Split_PO_INV_WithSlash()
     Columns("J:J").Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
     Columns("K:K").Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
